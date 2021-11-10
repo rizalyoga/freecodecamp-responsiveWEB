@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+.container {
+  width: 100%;
+  margin: 3.125rem auto 0 auto;
+}
+
+.form-select option {
+  color: gray;
+}
+
+body {
+  background: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url("http://libraries.4cls.org/walton/wordpress/wp-content/uploads/2018/01/using-a-computer.jpg");
+}
+
+/* ------------------------------- query media ------------------------------ */
+
+@media (max-width: 830px) {
+  .container-md {
+    max-width: 80% !important;
+  }
+}
+
+@media (max-width: 570px) {
+  h1 {
+    font-size: 25px;
+  }
+  .header p {
+    font-size: 14px;
+  }
+}

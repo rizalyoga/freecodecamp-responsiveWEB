@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- linkCSS -->
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+    <title>Form free Bootcamp</title>
+  </head>
+  <body>
+    <div class="header text-center">
+      <h1 id="title" class="pt-3 text-white">Form free Bootcamp</h1>
+      <p id="description" class="text-white">Thank you for taking the time to help us improve the platform</p>
+    </div>
+
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                                  FORM                                   -->
+    <!-- ----------------------------------------------------------------------- -->
+
+    <div class="container-md justify-content-center rounded-2 p-4 mb-4" style="background: rgba(106, 104, 109, 0.8); max-width: 50%">
+      <form id="survey-form">
+        <div class="form-group">
+          <div class="mb-3">
+            <label for="name" id="name-label">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name" required />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="mb-3">
+            <label for="email" id="email-label">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email" required />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="mb-3">
+            <label for="age" id="number-label">Age</label>
+            <input type="number" class="form-control" id="age" placeholder="Enter your age" min="15" max="35" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <p>Which option best describes your current role?</p>
+          <select id="dropdown" class="form-select" aria-label="role-label">
+            <option selected>Select curent role</option>
+            <option value="student">Studend</option>
+            <option value="job">Fulltime Job</option>
+            <option value="learner">Fulltime Learner</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p class="pt-3">Would you recommend free Bootcamp to a friend?</p>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="user-recomended" value="definitely" />
+            <label class="form-check-label"> Definitely </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="user-recomended" value="maybe" />
+            <label class="form-check-label"> Maybe </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="user-recomended" value="not-recomended" />
+            <label class="form-check-label"> Not-recomended </label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <p class="pt-3">What is your favorite feature of free BootCamp?</p>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="front-end" />
+            <label class="form-check-label"> Front-end </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="back-end" />
+            <label class="form-check-label"> Back-end </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="forum" />
+            <label class="form-check-label"> Forum </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="data-visualisation" />
+            <label class="form-check-label"> Data visualisation </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="chalanges" />
+            <label class="form-check-label"> Chalanges </label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="mb-3">
+            <label class="form-label pt-3">Any comments or suggestions?</label>
+            <textarea class="form-control" id="suggestions" rows="3" placeholder="Enter your comment here..."></textarea>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <button type="submit" class="btn btn-secondary">Submit</button>
+        </div>
+      </form>
+    </div>
+    <!-- ------------------------------ End-Form ------------------------------- -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
